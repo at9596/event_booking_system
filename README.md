@@ -8,9 +8,6 @@ This repository contains the codebase for the Event Booking System, a platform f
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
 - [Database Design](#database-design)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Submission Instructions](#submission-instructions)
 
 ## Prerequisites
 
