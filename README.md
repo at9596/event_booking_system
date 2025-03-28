@@ -32,24 +32,8 @@ update event api- ![image](https://github.com/user-attachments/assets/3c05b626-9
 delete event api- ![image](https://github.com/user-attachments/assets/b6d6419a-3d51-4bbb-a5dc-b4dbf13b7809)
 book tickets - ![image](https://github.com/user-attachments/assets/81cae8e7-6cdd-478c-9cfc-4863a536aea7)
 
-database design: +------------------+       +------------------+       +------------------+       +------------------+
-|     Users        |       |     Events       |       |     Tickets      |       |    Bookings      |
-+------------------+       +------------------+       +------------------+       +------------------+
-| id (PK)          |       | id (PK)          |       | id (PK)          |       | id (PK)          |
-| name             |       | name             |       | event_id (FK)    |       | customer_id (FK) |
-| email            |       | date             |       | price            |       | event_id (FK)    |
-| password_digest  |       | venue            |       | availability     |       | ticket_id (FK)   |
-| role             |       | organizer_id (FK)|       +------------------+       | quantity         |
-| created_at       |       | created_at       |                                | status           |
-| updated_at       |       | updated_at       |                                | created_at       |
-+------------------+       +------------------+                                | updated_at       |
-                                                                            +------------------+
+database design: ![image](https://github.com/user-attachments/assets/b15044a2-2012-4db9-ba3f-b31fcc187d6d)
 
-Relationships:
-- Users (organizers) can create multiple Events.
-- Users (customers) can make multiple Bookings.
-- Events can have multiple Tickets.
-- Bookings link Users (customers) to Events and Tickets.
 
 
 
