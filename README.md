@@ -14,14 +14,14 @@ This repository contains the codebase for the Event Booking System, a platform f
 
 ## Prerequisites
 
-- **Ruby Version**: Ensure you have the required Ruby version installed.
-- **System Dependencies**: Install necessary dependencies such as Rails, PostgreSQL, etc.
+- **Ruby Version**: Ensure you have the required Ruby version(3.2.0) installed.
+- **System Dependencies**: Install necessary dependencies such as Rails(8.0.2), PostgreSQL, redis-server.
 
 ## Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:at9596/event_booking_system.git
    cd event_booking_system
    ```
 
@@ -77,8 +77,6 @@ Run the test suite to ensure everything is working as expected:
 ```bash
 rails test
 ```
-
-## Deployment
 
 Follow these steps to deploy the application:
 1. Set up the production environment.
