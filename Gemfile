@@ -52,3 +52,8 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
   gem 'dotenv'
 end
+# Use SIDEKIQ FOR Asynchronous Tasks
+gem 'sidekiq', '~> 7.3.0'
+
+# USE LETTER_OPENER FOR CHECK EMAIL IN DEVELOPMENT
+gem 'letter_opener', group: :development

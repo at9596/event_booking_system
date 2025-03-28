@@ -1,0 +1,5 @@
+<h1>Booking Confirmation</h1>
+<p>Dear <%= @customer.name %>,</p>
+<p>You have successfully booked a ticket for <strong><%= @event.name %></strong>.</p>
+<p>Event Date: <%= @event.date.strftime('%B %d, %Y') %></p>
+<p>Thank you for booking with us!</p>

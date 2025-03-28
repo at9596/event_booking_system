@@ -14,6 +14,7 @@ class EventsController < ApplicationController
 
   def update
     if @event.update(event_params)
+      EventUpdateNotificationJob.perform_later(@event.id) # ENQUEUE SIDEKIQ JOBS
       render json: @event
     else
       render json: { errors: @event.errors.full_messages }, status: :unprocessable_entity
