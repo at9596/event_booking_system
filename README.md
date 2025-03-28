@@ -19,9 +19,6 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
 
 Register user api-![image](https://github.com/user-attachments/assets/c8d5bc67-f07d-44f3-875f-69a443666484)
 
